@@ -1,13 +1,13 @@
 var thumbnailElement = document.getElementById("smart_thumbnail");
-var isSmall = true; // İkilik deyəni, şəkilin kiçik və ya böyük olduğunu təyin edir
+var isSmall = true; // The divisor determines whether the image is small or large
 
 thumbnailElement.addEventListener("click", function() {
-    // Əgər şəkil kiçikdirsə, onu böyük edin
+    // If the image is small, make it big
     if (isSmall) {
         thumbnailElement.classList.remove("small");
         isSmall = false;
     } 
-    // Əgər şəkil böyükdürsə, onu kiçik edin
+    // If the image is large, make it smaller
     else {
         thumbnailElement.classList.add("small");
         isSmall = true;
